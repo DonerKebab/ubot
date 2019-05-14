@@ -47,7 +47,7 @@ def change_direction(command, current_direction):
 
 
 
-def process(input):
+def process_command(input):
     current_state = {
         'x': 0,
         'y': 0,
@@ -80,6 +80,6 @@ if __name__ == '__main__':
         'W': 'West',
         'E': 'East'
     }
-    current_state = process(input)
+    current_state = process_command(input)
 
     print('X: {X} Y: {Y} Direction: {DIRECTION}'.format(X=current_state['x'], Y=current_state['y'], DIRECTION=direction[current_state['current_direction']]))
